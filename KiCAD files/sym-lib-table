@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ESP8266)(type Legacy)(uri ${KIPRJMOD}/kicad-ESP8266-master/ESP8266.lib)(options "")(descr ""))
+  (lib (name reflow-rescue)(type Legacy)(uri ${KIPRJMOD}/reflow-rescue.lib)(options "")(descr ""))
+  (lib (name Power_Supplies)(type Legacy)(uri "C:/Users/hjf/Desktop/Kicad Projects/KiCAD_Libraries-master/Schematic/Power_Supplies.lib")(options "")(descr ""))
+)

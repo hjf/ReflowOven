@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name w_conn_gmkds)(type KiCad)(uri ${KIPRJMOD}/w_conn_gmkds.pretty)(options "")(descr ""))
+  (lib (name w_conn_mkds)(type KiCad)(uri ${KIPRJMOD}/w_conn_mkds.pretty)(options "")(descr ""))
+  (lib (name w_to)(type KiCad)(uri ${KIPRJMOD}/w_to.pretty)(options "")(descr ""))
+  (lib (name Power_Supply)(type KiCad)(uri ${KIPRJMOD}/KiCAD_Libraries-master/PCB/Power_Supply.pretty)(options "")(descr ""))
+  (lib (name ESP8266)(type KiCad)(uri ${KIPRJMOD}/kicad-ESP8266-master/ESP8266.pretty)(options "")(descr ""))
+  (lib (name fc211)(type KiCad)(uri ${KIPRJMOD}/fc211.pretty)(options "")(descr ""))
+  (lib (name shock)(type KiCad)(uri ${KIPRJMOD}/shock.pretty)(options "")(descr ""))
+)
