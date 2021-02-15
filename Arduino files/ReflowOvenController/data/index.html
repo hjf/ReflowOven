@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Reflow Oven</title>
+  <link rel="stylesheet" href="style.css">
+  <script async src="controller.js" onload="startController()"></script>
+  <script async src="Chart.bundle.min.js"></script>
+  <script async src="jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+  <div class="containerDiv">
+    <div class="mainArea">
+      <!-- <div id="currentControllerTemperatureDiv">Current Controller temperature: <span id="currentControllerTemperature"></span>ºC</div> -->
+ 
+      <div id="startButtonDiv">
+        <input type="button" value="  NO COMM  " id="startButton" class="grey" onclick="startStop()" />
+
+      </div>
+      <br/>
+      <form id="pidParameterArea">
+        <input type="button" id="allowEditPid" value="Edit PID parameters" onclick="toggleEditPID()"/>
+          <label for="Kp">Kp:</label>
+          <input type="number" name="Kp" id="Kp" class="pidParameterInput" disabled="true"/>
+          <label for="Ki">Ki:</label>
+          <input type="number" name="Ki" id="Ki" class="pidParameterInput" disabled="true" />
+          <label for="Kd">Kd:</label>
+          <input type="number" name="Kd" id="Kd" class="pidParameterInput"  disabled="true"/>
+          <input type="button" id="submitPid" value="Set PID" onclick="setPid()" disabled="true"></input>
+        </form>
+    </div>
+
+
+    <div class="bigTile" id="currentStatusDiv">
+      <p class="tileTitle">STate</p>
+      <p class="medium">
+        <span id="currentStatus">&nbsp;</span>
+      </p>
+      <p id="remainingParagraph" class="remaining hide" >Remaining: <span id="remainingSeconds"></span></p>
+    </div>
+
+
+    <div class="bigTile" id="currentOvenTemperatureDiv">
+      <p class="tileTitle"> Current temperature (ºC)</p>
+      <p class="huge"><span id="currentOvenTemperature">&nbsp;</span></p>
+    </div>
+
+
+    <div class="bigTile" id="targetTemperatureDiv">
+      <p class="tileTitle">Target temperature (ºC)</p>
+      <p class="huge">
+        <span id="targetTemperature">&nbsp;</span>
+      </p>
+    </div>
+
+    <div id="powerLevelDiv" class="bigTile">
+      <p class="tileTitle">Power level</p>
+      <progress id="powerLevel" value="0" max="100"></progress>
+
+    </div>
+
+    <div class="bottomChart" id="tempchartDiv">
+      <canvas id="tempchart" width="16" height="5"></canvas>
+    </div>
+  </div>
+
+
+</body>
+<script>
+
+</script>
+
+</html>

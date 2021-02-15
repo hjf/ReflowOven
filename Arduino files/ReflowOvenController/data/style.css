@@ -1,0 +1,261 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #353432
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.bigTile {
+    width: 15em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    overflow:hidden
+}
+
+#currentStatusDiv {
+    background-color: #2B4E72;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+#currentOvenTemperatureDiv {
+    background-color: #2B4E72;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#targetTemperatureDiv {
+    background-color: #2B4E72;
+    
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.huge {
+    font-size: 8em
+}
+
+.medium {
+    font-size: 4em
+}
+
+.tileTitle {
+    text-transform: uppercase;
+    font-size: .8em;
+    font-style: italic;
+}
+
+#powerLevel {
+    height: 2em;
+    color: #94BA65;
+    margin-top:1em
+}
+
+#powerLevelDiv {
+    background-color: #2B4E72;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#powerLevel:after {
+    content: attr(value)'%';
+    vertical-align: middle
+}
+
+.containerDiv {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-columns: auto 15em;
+    background-color: #4E4D4A;
+    margin: 1em auto;
+    padding: 1em;
+    width: 50em;
+    
+}
+
+.mainArea {
+    grid-column: 1;
+    grid-row: 1 / span 4;
+    background-color: #2B4E72;
+    
+}
+
+.rightColumn {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.bottomChart {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    background-color: white
+}
+
+#startButton {
+    font-size: 6em;
+    border:2px solid black;
+    
+}
+#startButtonDiv {
+    text-align: center;
+    bottom: 0
+}
+.green {
+    background-color:green;
+    color:white;
+}
+.red { 
+    background-color: red;
+    color: white;
+}
+
+.grey {
+    background-color:grey;
+    color:black;
+}
+.pidParameterInput {
+    width:5em
+}
+.remainingParagraph {
+    font-size:0.75em
+}
+.hide {
+     visibility: hidden
+}
