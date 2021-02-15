@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:reflow-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Relay_SolidState:MOC3063M U1
+L reflow-rescue:MOC3063M-Relay_SolidState U1
 U 1 1 5BEB127F
 P 2550 6750
 F 0 "U1" H 2550 7075 50  0000 C CNN
